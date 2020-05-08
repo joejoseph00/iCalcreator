@@ -8,7 +8,7 @@
  * @link      http://kigkonsult.se/iCalcreator/index.php
  * @license   http://kigkonsult.se/downloads/dl.php?f=LGPL
  * @package   iCalcreator
- * @version   v2.20.3
+ * @version   v2.20.4
  */
 /**
  * This library is free software; you can redistribute it and/or
@@ -32,7 +32,7 @@
  * @copyright Copyright (c) 2007-2014 Kjell-Inge Gustafsson, kigkonsult, All rights reserved
  * @license   http://kigkonsult.se/downloads/dl.php?f=LGPL
  */
-define( 'ICALCREATOR_VERSION', 'iCalcreator 2.20.3' );
+define( 'ICALCREATOR_VERSION', 'iCalcreator 2.20.4' );
 /*********************************************************************************/
 /**
  * vcalendar class
