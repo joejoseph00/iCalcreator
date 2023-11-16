@@ -217,7 +217,7 @@ class vcalendar {
  * @return void
  */
   function _makeProdid() {
-    $this->prodid  = '-//'.$this->unique_id.'//NONSGML kigkonsult.se '.ICALCREATOR_VERSION.'//'.strtoupper( $this->language );
+    $this->prodid  = '-//'.$this->unique_id.'//NONSGML kigkonsult.se '.ICALCREATOR_VERSION.'//'.strtoupper( (string) $this->language );
   }
 /**
  * Conformance: The property MUST be specified once in an iCalendar object.
@@ -750,7 +750,7 @@ class vcalendar {
         $res = TRUE;
         break;
       case 'LANGUAGE': // set language for calendar component as defined in [RFC 1766]
-        $value   = trim( $value );
+        $value   = trim( (string) $value );
         $this->language = $value;
         $this->_makeProdid();
         $subcfg  = array( 'LANGUAGE' => $value );
@@ -4869,7 +4869,7 @@ class calendarComponent {
         break;
       case 'LANGUAGE':
          // set language for calendar component as defined in [RFC 1766]
-        $value  = trim( $value );
+        $value  = trim( (string) $value );
         if( empty( $this->language ) || !$softUpdate )
           $this->language = $value;
         $subcfg = array( 'LANGUAGE' => $value );
