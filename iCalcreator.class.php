@@ -4869,7 +4869,7 @@ class calendarComponent {
         break;
       case 'LANGUAGE':
          // set language for calendar component as defined in [RFC 1766]
-        $value  = trim( $value );
+        $value  = trim( (string) $value );
         if( empty( $this->language ) || !$softUpdate )
           $this->language = $value;
         $subcfg = array( 'LANGUAGE' => $value );
